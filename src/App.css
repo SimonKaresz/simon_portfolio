@@ -48,7 +48,7 @@
     }
 
     .card{
-        @apply h-[250px] overflow-hidden border-8 border-blue-800/40 rounded-lg mx-2 shadow-xl shadow-black max-[400px]:w-[95%]
+        @apply h-[250px] overflow-hidden border-8 border-blue-800/40 rounded-lg mx-2 shadow-xl shadow-black max-[400px]:w-[355px]
     }
 
     .card:hover img,.card:active img,.card:focus img{
@@ -68,7 +68,7 @@
     }
 
     .description{
-        @apply h-[250px] left-[-355px] text-center flex flex-col justify-center w-[400px] p-[6px] box-border relative bg-gradient-to-b from-neutral-200/60 max-[380px]:w-[355px] max-[380px]:left-[-355px];
+        @apply h-[250px] left-[-400px] text-center flex flex-col justify-center w-[400px] p-[6px] box-border relative bg-gradient-to-b from-neutral-200/60 max-[380px]:w-[355px] max-[380px]:left-[-355px];
         transition: .5s ease-in-out;
     }
 
