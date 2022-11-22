@@ -20,7 +20,7 @@ export const ProjectData:ProjectCardData[]=[
     },
     {
         name:"Angular Portfolio",
-        description:"My porfolio page in angular(hungarian)",
+        description:"My porfolio page in angular(hun)",
         imageURL:Project2Image,
         appURL:"https://simonkaresz.github.io/portfolio/",
     },
@@ -32,7 +32,7 @@ export const ProjectData:ProjectCardData[]=[
     },
     {
         name:"English learn App",
-        description:"Learn English words easily(hungarian)",
+        description:"Learn English words easily(hun)",
         imageURL:Project4Image,
         appURL:"https://english-learning-130e2.web.app/"
     }
