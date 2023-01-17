@@ -1,18 +1,14 @@
-interface ProgressData {
-  stack_name: string;
-  stack_knowledge_level: number;
-  color: string;
-}
+import { IProgressData } from "./skillsInterfaces";
 
-export const ProgressBar = (props: ProgressData) => {
+export const ProgressBar = (props: IProgressData) => {
   return (
     <div className="mb-2 select-none">
-      <h1 className="text-2xl text-center mb-2 font-bold">
+      <h1 className="mb-2 text-center text-2xl font-bold">
         {props.stack_name}
       </h1>
       <div className="w-full rounded-xl bg-white/[.3]">
         <div
-          className="text-right pr-1 rounded-xl font-bold text-2xl"
+          className="rounded-xl pr-1 text-right text-2xl font-bold"
           style={{
             width: props.stack_knowledge_level + "%",
             backgroundImage: `linear-gradient(to right,${props.color})`,

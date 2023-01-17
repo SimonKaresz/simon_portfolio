@@ -4,16 +4,16 @@ import {
   FaGithubSquare,
   FaLinkedin,
 } from "react-icons/fa";
-import { Links } from "../otherComponents/links/links";
+import { Links } from "../../otherComponents/links/links";
 
 export const Footer = () => {
   return (
-    <footer className="text-white w-full py-64 flex flex-col justify-center items-center bg-gradient-to-b from-black select-none">
-      <div className="flex w-full justify-around items-center max-md:flex-col-reverse">
+    <footer className="flex w-full select-none flex-col items-center justify-center bg-gradient-to-b from-black py-12 text-white">
+      <div className="flex w-full items-center justify-around max-md:flex-col-reverse">
         <div>
           <h1>© Simon Károly 2022</h1>
         </div>
-        <div className="flex justify-center items-center text-center max-md:my-12 max-md:text-md max-[380px]:flex-col">
+        <div className="max-md:text-md flex items-center justify-center text-center max-md:my-12 max-[380px]:flex-col">
           <a
             className="mx-2 text-lg font-semibold hover:text-cyan-300/90 active:text-cyan-300/90"
             href="#home"
@@ -45,26 +45,26 @@ export const Footer = () => {
             Connect
           </a>
         </div>
-        <div className="flex flex-col justify-center items-start">
-          <div className="flex items-center justify-center my-1">
+        <div className="flex flex-col items-start justify-center">
+          <div className="my-1 flex items-center justify-center">
             <FaFacebookSquare />
             <a href={Links.facebook_link} target="blank" className="mx-2">
               Facebook
             </a>
           </div>
-          <div className="flex items-center justify-center my-1">
+          <div className="my-1 flex items-center justify-center">
             <FaLinkedin />
             <a href={Links.linkedin_link} target="blank" className="mx-2">
               Linkedin
             </a>
           </div>
-          <div className="flex items-center justify-center my-1">
+          <div className="my-1 flex items-center justify-center">
             <FaGithubSquare />
             <a href={Links.github_link} target="blank" className="mx-2">
               GitHub
             </a>
           </div>
-          <div className="flex items-center justify-center my-1">
+          <div className="my-1 flex items-center justify-center">
             <FaFacebookMessenger />
             <a href={Links.messenger_link} target="blank" className="mx-2">
               Messenger

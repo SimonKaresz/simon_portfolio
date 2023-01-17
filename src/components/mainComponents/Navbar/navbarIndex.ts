@@ -1,0 +1,10 @@
+export { CV } from "./CV";
+export { DividingLine } from "./DividingLine";
+export { HeaderNavItems } from "./HeaderNavItems";
+export { HeaderOther } from "./HeaderOther";
+export { SocialLinks } from "./SocialLinks";
+export { HeaderNavItemStructure } from "./HeaderNavItemStructure";
+export { SocialLinkStructure } from "./SocialLinkStructure";
+export  { NavItemData } from "./navbarDatas";
+export { SocialLinkData } from "./navbarDatas";
+export { CVData } from "./navbarDatas";

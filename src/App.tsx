@@ -1,11 +1,11 @@
 import "./App.css";
-import { AboutMe } from "./components/mainComponents/aboutMe";
-import { Contact } from "./components/mainComponents/contact";
-import { Footer } from "./components/mainComponents/footer";
-import { Home } from "./components/mainComponents/home";
-import { Navbar } from "./components/mainComponents/navbar";
-import { Project } from "./components/mainComponents/project";
-import { Skills } from "./components/mainComponents/skills";
+import { AboutMe } from "./components/mainComponents/AboutMe/aboutMe";
+import { Contact } from "./components/mainComponents/Contact/contact";
+import { Footer } from "./components/mainComponents/Footer/footer";
+import { Home } from "./components/mainComponents/Home/home";
+import { Navbar } from "./components/mainComponents/Navbar/navbar";
+import { Project } from "./components/mainComponents/Project/project";
+import { Skills } from "./components/mainComponents/Skill/skills";
 
 function App() {
   return (

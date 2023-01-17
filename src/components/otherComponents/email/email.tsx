@@ -3,14 +3,14 @@ export const Email = () => {
   const [state, handleSubmit] = useForm("meqdvbro");
   if (state.succeeded) {
     return (
-      <h1 className="my-12 py-48 text-4xl font-bold text-orange-500 text-center mx-auto">
+      <h1 className="my-12 mx-auto py-20 text-center text-4xl font-bold text-orange-500">
         Thanks for joining!
       </h1>
     );
   }
   return (
     <form
-      className="mx-auto flex flex-col w-[800px] h-[600px] justify-center max-lg:w-[90%]"
+      className="mx-auto flex h-[600px] w-[800px] flex-col justify-center max-lg:w-[90%]"
       onSubmit={handleSubmit}
     >
       <input
@@ -19,7 +19,7 @@ export const Email = () => {
         name="name"
         required
         placeholder="Name"
-        className="border-2 border-blue-900 bg-transparent my-8 p-2 rounded-lg focus:outline-none"
+        className="my-8 rounded-lg border-2 border-blue-900 bg-transparent p-2 focus:outline-none"
       />
       <ValidationError prefix="Name" field="name" errors={state.errors} />
       <input
@@ -28,7 +28,7 @@ export const Email = () => {
         name="email"
         placeholder="Email"
         required
-        className="my-8 border-2 border-blue-900 bg-transparent p-2 rounded-lg focus:outline-none"
+        className="my-8 rounded-lg border-2 border-blue-900 bg-transparent p-2 focus:outline-none"
       />
       <ValidationError prefix="Email" field="email" errors={state.errors} />
       <textarea
@@ -36,11 +36,11 @@ export const Email = () => {
         name="message"
         placeholder="Message"
         required
-        className="my-8 border-2 border-blue-900 bg-transparent p-2 rounded-lg h-[200px] resize-none focus:outline-none"
+        className="my-8 h-[200px] resize-none rounded-lg border-2 border-blue-900 bg-transparent p-2 focus:outline-none"
       />
       <ValidationError prefix="Message" field="message" errors={state.errors} />
       <input
-        className="border-2 border-indigo-400 p-3 w-[200px] mx-auto rounded-lg transition duration-500 ease-in-out hover:bg-indigo-400 active:bg-indigo-400 cursor-pointer"
+        className="mx-auto w-[200px] cursor-pointer rounded-lg border-2 border-indigo-400 p-3 transition duration-500 ease-in-out hover:bg-indigo-400 active:bg-indigo-400"
         type="submit"
         value="Send Message"
         disabled={state.submitting}

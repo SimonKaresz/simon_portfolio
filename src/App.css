@@ -16,14 +16,21 @@
     header::after{
         @apply relative top-0 left-0 right-0 z-10 blur-sm
     }
+
+    html{
+        font-family: 'Poppins',sans-serif;
+        scroll-behavior: smooth;
+        scroll-padding-top: 100px;
+    }
 }
 
 @layer components{
-    nav{
-        @apply mx-4 text-xl font-semibold cursor-pointer max-lg:my-2 text-center
+    /* NAVBAR */
+    .nav_item{
+        @apply my-2 text-xl font-semibold cursor-pointer lg:mx-4 text-center
     }
 
-    nav:hover,nav:active{
+    .nav_item:hover,.nav_item:active{
         @apply text-sky-500
     }
 
@@ -35,20 +42,27 @@
         @apply border-sky-500 bg-sky-900
     }
 
+    .header_appearance{
+        @apply fixed top-0 left-0 right-0 z-50 flex w-full select-none flex-col items-center justify-around bg-black/[.6] py-8 text-white lg:flex-row
+    }
+
+    /* ABOUTME */
     #aboutme{
         @apply bg-center bg-cover bg-no-repeat
     }
 
+    /* SKILL */
     .skill-bx{
-        @apply mt-16 mx-5 w-1/4 max-xl:w-1/3 max-lg:w-1/2 max-md:w-96 max-[380px]:w-[355px] bg-neutral-800/60 border-4 rounded-3xl shadow-md
+        @apply mt-16 h-[500px] mx-5 w-[400px] max-w-[90%] bg-neutral-800/60 border-4 rounded-3xl shadow-md
     }
 
     .skill-bx-header{
         @apply text-center mt-5 text-3xl font-semibold
     }
 
+    /* PROJECT */
     .card{
-        @apply h-[250px] overflow-hidden border-8 border-blue-800/40 rounded-lg mx-2 shadow-xl shadow-black max-[400px]:w-[355px]
+        @apply h-[300px] w-full overflow-hidden
     }
 
     .card:hover img,.card:active img,.card:focus img{
@@ -60,7 +74,7 @@
     }
 
     .card:hover .description,.card:active .description,.card:focus .description{
-        @apply left-[0px] bottom-[250px]
+        @apply left-[0px] bottom-[300px]
     }
 
     .card:hover p,.card:active p,.card:focus p{
@@ -68,7 +82,7 @@
     }
 
     .description{
-        @apply h-[250px] left-[-400px] items-center text-center flex flex-col justify-center w-[400px] p-[6px] box-border relative bg-gradient-to-b from-neutral-200/60 max-[400px]:w-[355px] max-[400px]:left-[-355px];
+        @apply h-[300px] left-[-100%] items-center text-center flex flex-col justify-center w-full p-[6px] box-border relative bg-gradient-to-b from-neutral-200/60;
         transition: .5s ease-in-out;
     }
 
@@ -78,7 +92,4 @@
 }
 
 
-html{
-    font-family: 'Poppins',sans-serif;
-    scroll-behavior: smooth;
-}
+
