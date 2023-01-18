@@ -1,5 +1,4 @@
-import { FaFacebookF } from "react-icons/fa";
-import { FaLinkedinIn } from "react-icons/fa";
+import { FaFacebookF,FaLinkedinIn } from "react-icons/fa";
 import { FiGithub } from "react-icons/fi";
 
 import { Links } from "../../otherComponents/links/links";
@@ -44,6 +43,6 @@ export const NavItemData = [
   ];
   
   export const CVData = {
-    href: "https://drive.google.com/file/d/1VQ6VbeVHZh5TeNV0rKnXnB_sXhgPn0UD/view?usp=sharing",
+    href: "https://drive.google.com/file/d/18LW-ROt9dy42xAtUo9EklMTP_noHNIfV/view?usp=sharing",
     text: "CV",
   };
