@@ -43,6 +43,6 @@ export const NavItemData = [
   ];
   
   export const CVData = {
-    href: "https://drive.google.com/file/d/18LW-ROt9dy42xAtUo9EklMTP_noHNIfV/view?usp=sharing",
+    href: "https://drive.google.com/file/d/1q4mdordf9-j2bfFH6Kwpck1wOH1pKzMK/view?usp=sharing",
     text: "CV",
   };
